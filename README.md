@@ -1,3 +1,3 @@
-# SIH
-The website for SIH
+# The issues 
+The website for issues
 import Website
