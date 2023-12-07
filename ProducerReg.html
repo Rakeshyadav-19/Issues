@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 130px;
+            border: none;
+            border-radius: 7%;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <form action="#" method="post" id="farmerForm">
+        <h1 style="text-align: center;">Producer</h1>
+
+        <label for="name">Name of product:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="image">Image Of Product:</label>
+        <input type="file" id="fileInput" name="image" accept="image/*" onchange="previewImage(event)" required>
+        
+        <div id="imagePreview"></div>
+
+
+        <label for="RegID"><Ri:a>R</Ri:a>egistration ID:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="Price">Price:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="District">District:</label>
+        <input type="text" id="product" name="product" required>
+
+        <label for="Description">Description:</label>
+        <input id="quantity" name="quantity" required>
+
+        <label for="class"> Class:</label>
+      
+       
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+              <option value="Agriculture">
+              <option value="Handicraft">
+              <option value="food">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+                       
+        <button  type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Basic form validation
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var product = document.getElementById('product').value;
+            var quantity = document.getElementById('quantity').value;
+
+            if (!name || !email || !phone || !product || !quantity) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // If all fields are filled, you can proceed with form submission or other actions
+            alert('Form submitted successfully!');
+            // Add your code here to send the data to the server or perform other actions
+        }
+
+        function previewImage(event) {
+            const fileInput = event.target;
+            const imagePreview = document.getElementById('imagePreview');
+
+            while (imagePreview.firstChild) {
+                imagePreview.removeChild(imagePreview.firstChild);
+            }
+
+            const files = fileInput.files;
+
+            if (files.length > 0) {
+                const image = document.createElement('img');
+                image.src = URL.createObjectURL(files[0]);
+                image.alt = 'Preview';
+                image.style.maxWidth = '100%';
+                image.style.maxHeight = '200px';
+                imagePreview.appendChild(image);
+            }
+        }
+    </script>
+
+</body>
+</html>
