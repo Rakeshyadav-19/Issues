@@ -87,3 +87,11 @@ background-color: #04AA6D;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3e8e41;
+  color: #fff;
+}
