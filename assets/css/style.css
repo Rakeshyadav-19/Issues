@@ -553,19 +553,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     border-left: 1px solid #dde0e4;
     border-right: 1px solid #dde0e4;
 }
-.explore-person {
-    padding-bottom: 28px;
-    border-bottom: 1px solid #e1e5eb;
-}
-.explore-person-img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.explore-person p {font-size: 12px;}
-.explore-open-close-part {
-    margin-top: 20px;
-}
 .close-btn {
     color: #f63138;
     text-transform: capitalize;
@@ -573,9 +560,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .close-btn.open-btn {color: #00c437;}
 .explore-map-icon{text-align: right;}
 .explore-map-icon a svg {
-    width: 12px;
-    height: 14px;
-    margin-left: 23px;
+    align-items: center;
+    width: 18px;
+    height: 15px;
+    margin-top: 10px;
+    margin-left: 22px;
+    margin-right: 15px;
     color: #767f86;
 }
 .explore-map-icon a svg:hover{color: #f63138;}
