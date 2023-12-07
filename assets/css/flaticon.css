@@ -33,11 +33,8 @@
 .flaticon-search:before { content: "\f101"; }
 .flaticon-gps-fixed-indicator:before { content: "\f102"; }
 .flaticon-list-with-dots:before { content: "\f103"; }
-.flaticon-transport:before { content: "\f104"; }
-.flaticon-pills:before { content: "\f105"; }
-.flaticon-building:before { content: "\f106"; }
-.flaticon-travel:before { content: "\f107"; }
-.flaticon-restaurant:before { content: "\f108"; }
+.flaticon-travel:before { content: "\f103"; }
+.flaticon-restaurant:before { content: "\f101"; }
 .flaticon-location-on-road:before { content: "\f109"; }
 .flaticon-networking:before { content: "\f10a"; }
 .flaticon-lightbulb-idea:before { content: "\f10b"; }
