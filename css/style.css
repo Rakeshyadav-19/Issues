@@ -1,3 +1,4 @@
+/* Main Nav */
 body {
   background-color:white;
 }
@@ -87,6 +88,96 @@ background-color: #04AA6D;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* The page info */
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and font style to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+.hero {
+  background-image: url('');
+  background-size: cover;
+  text-align: center;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.project{ 
+  min-height:100vh;
+  background:#333;
+}
+
+.project .heading{
+  color:#fff;
+}
+
+.box{
+  background-color: #E9E6F0;
+  border-radius: 25px;
+  width: 250px;
+  margin: auto;
+}
+
+.project .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .box-container .box{
+  height:20rem;
+  width:30rem;
+  border-radius: .5rem;
+  margin:2rem;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem #000;
+}
+
+.project .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.project .box-container .box:hover img{
+  transform: scale(1.3);
+}
+
+/* Style the main content section */
+.content {
+  padding: 2rem;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Style the services section */
+.services {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.services h2 {
+  font-size: 2rem;
+}
+
+
 
 /* Style the footer */
 footer {
